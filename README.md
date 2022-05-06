@@ -11,3 +11,32 @@ Esta base de dados foi escolhida por ser pequena, de simples entendimento e est�
 <img src="https://i.ibb.co/mcMQ6W0/d9vaiq1-535a73db-2761-4750-82c2-dc433c669f38.png" alt="Imagem das armas da base de dados utilizada neste exemplo" style="zoom:50%;" />
 
 > Imagem de um conjunto de armas do dataset escolhido para este exemplo. **Fonte:** [Dark Soul 3 Weapons (Kaggle)](https://www.kaggle.com/datasets/l3llff/-dark-souls-3-weapon).
+
+A Database foi salva num arquivo **Google Sheets** e foi tornada **pública** através do link abaixo:
+
+> https://docs.google.com/spreadsheets/d/1-eeEwPbFubO4cYiIerHPaB2BN90sihb7sOTvekqa5Iw/edit?usp=sharing
+
+## Autenticar a Google API
+
+Para trabalhar com o Google Sheets é necessário criar uma API específica para aquela tabela
+
+
+
+## Aplicativo Next JS
+
+Para acessar os dados da Database será criado um _Crud_ (Um site) através da tecnologia **Next JS**\* como _front end_ e _node js_ como backend
+
+> \* Na prática pode-se utilizar qualquer tecnologia web que permita uma programação razoável, eu escolhi o Next JS
+
+Seguiremos os seguintes passos:
+
+1. Criar um projeto de aplicativo Next 
+```bash
+npx create-next-app google-sheet-dashboard
+```
+2. Instalar o pacote do Google API para simplificar o processo de autenticação e acesso a planilha
+
+```bash
+npm install googleapis
+```
+
