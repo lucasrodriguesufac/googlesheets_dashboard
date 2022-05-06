@@ -10,6 +10,4 @@ Esta base de dados foi escolhida por ser pequena, de simples entendimento e est√
 
 <img src="https://i.ibb.co/mcMQ6W0/d9vaiq1-535a73db-2761-4750-82c2-dc433c669f38.png" alt="Imagem das armas da base de dados utilizada neste exemplo" style="zoom:50%;" />
 
-> Imagem de um conjunto de armas do dataset escolhido para este exemplo. 
->
-> Fonte: [Dark Soul 3 Weapons (Kaggle)](https://www.kaggle.com/datasets/l3llff/-dark-souls-3-weapon).
+> Imagem de um conjunto de armas do dataset escolhido para este exemplo. **Fonte:** [Dark Soul 3 Weapons (Kaggle)](https://www.kaggle.com/datasets/l3llff/-dark-souls-3-weapon).
