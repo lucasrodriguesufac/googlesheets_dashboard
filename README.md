@@ -18,11 +18,7 @@ A Database foi salva num arquivo **Google Sheets** e foi tornada **pública** at
 
 ## Aplicativo
 
-
-
-
-
-Para acessar os dados da Database será criado um _Crud_ (Um site) através da tecnologia **Next JS*** como _front end_
+Para acessar os dados da Database deve-se um _Crud_ (Um site) através da tecnologia **Next JS*** como _front end_
 
 > \* Na prática pode-se utilizar qualquer tecnologia web que permita uma programação razoável, eu escolhi o Next JS
 
@@ -33,6 +29,8 @@ Seguiremos os seguintes passos para criar o projeto Next:
 ```bash
 npx create-next-app google-sheet-dashboard
 ```
+Os detalhes do site estão disponíveis no repositóri
+
 ### Criando uma Google API
 
 Para o aplicativo Next acessar os dados da planilha é necessário ter uma Google API autenticada para o projeto.
@@ -52,29 +50,48 @@ Finalmente, a criação de uma Google API é relativamente complexa, mas está d
 
 > https://blog.coupler.io/how-to-use-google-sheets-as-database/
 
-#### Criação de uma chave JSON para o Google Sheets API
-
-Abaixo tem-se os principais passos para a criação de uma chave JSON:
+#### Criação da API
 
 1. Procure por `Google Sheets API` e ative-a
 
-![Imagem da barra de pesquisa](googlesheets-dashboard/imgs/gcloud_plataform_01.png)
+![Imagem da barra de pesquisa](imgs/gcloud_plataform_01.png)
 
 2. Clique em `Manage`
 
-![Adicionando a Google Sheets API](googlesheets-dashboard/imgs/gcloud_plataform_02.png)
+![Adicionando a Google Sheets API](imgs/gcloud_plataform_02.png)
 
-3. Crie uma nova credencial
+#### Criação da credencial
 
-![Criando uma nova credencial](googlesheets-dashboard/imgs/gcloud_plataform_03.png)
+Crie uma nova credencial:
 
-4. Selecione a conta de serviço:
+![Criando uma nova credencial](imgs/gcloud_plataform_03.png)
 
-![Credenciais](googlesheets-dashboard/imgs/gcloud_plataform_04.png)
+#### Criação da chave secreta
 
-5. Procure por chave e crie uma chave JSON
+1. Selecione a conta de serviço:
 
-Procure por Google Sheets API
+![Credenciais](imgs/gcloud_plataform_04.png)
+
+2. Procure por chave e crie uma chave JSON e salve no `root` do Next App
+
+![Criação da chave](imgs/gcloud_plataform_05.png)
+
+**Não se esqueça de adicionar a chave ao git ignore!!! Pois pode caso alguém tenha acesso a chave poderá acessar o seu Google Cloud Plataform**
+
+#### Incorporando a chave ao Next App
+
+1. Crie um arquivo chamado `.env.local`
+
+2. Neste arquivo adicione o **caminho da chave** o `SHEET_ID`
+
+    ```bash
+    GOOGLE_APPLICATION_CREDENTIAL=./secret.json
+    SHEET_ID=1-eeEwPbFubO4cYiIerHPaB2BN90sihb7sOTvekqa5Iw
+    ```
+
+    
+
+    Procure por Google Sheets API
 
 1. 
 

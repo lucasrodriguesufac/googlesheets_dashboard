@@ -1,0 +1,35 @@
+.container{
+    display: inline-flex;
+    flex-direction: row;
+    color: rgb(108, 108, 108);
+    background-color: rgb(38, 38, 38);
+    border-radius: 5px;
+    width: 60vw;
+    max-width: 800px;
+    padding: 10px;
+    flex-wrap: wrap;
+}
+
+.container input[type=text] {
+    padding: 6px;
+    margin: 0px;
+    height: 40px;
+    font-size: 18px;
+    border: #ddd solid 1px;
+    flex-grow: 20;
+}
+
+.container button {
+    padding: 6px 10px;
+    margin: 0px;
+    background: #ddd;
+    font-size: 17px;
+    border: none;
+    min-width: 40px;
+    cursor: pointer;
+    flex-grow: 1;
+}
+
+.container button:hover {
+    background: #ccc;
+  }
