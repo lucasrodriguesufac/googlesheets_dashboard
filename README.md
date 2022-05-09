@@ -2,6 +2,8 @@
 
 Pequeno tutorial de como criar uma fazer um sistema de busca de uma base de dados no Google Sheets usando a [Google Sheets API](https://developers.google.com/sheets/api/guides/concepts).
 
+Este tutorial é baseado no vídeo do [Fire Ship](https://fireship.io/lessons/google-sheets-database-nextjs/).
+
 ## Base de teste
 
 Para testar o conceito do exemplo será utilizada a base de dados [Dark Souls 3 Weapons](https://www.kaggle.com/datasets/l3llff/-dark-souls-3-weapon), disponível no **Kaggle**. A base contém informações sobre as armas do jogo **Dark Souls III** com um total de 287 armas e 17 colunas. A base de dados pode ser encontrada [aqui](https://www.kaggle.com/datasets/l3llff/-dark-souls-3-weapon).
